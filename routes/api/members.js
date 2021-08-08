@@ -34,8 +34,8 @@ router.post("/", (req, res) => {
   }
   //members.save(newMember) if you have a database
   members.push(newMember);
-  res.json(members);
-  //res.redirect('/'); //redirects back to page after added member
+  //res.json(members);
+  res.redirect('/'); //redirects back to page after added member
 });
 
 // Update Member
